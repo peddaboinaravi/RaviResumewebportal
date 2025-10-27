@@ -95,25 +95,6 @@
       font-size: 14px;
     }
 
-    label.upload-btn {
-      background: linear-gradient(90deg, #007bff, #0056d6);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      display: inline-block;
-      margin-top: 15px;
-      transition: background 0.3s ease;
-    }
-
-    label.upload-btn:hover {
-      background: linear-gradient(90deg, #0056d6, #003ea8);
-    }
-
-    input[type=file] {
-      display: none;
-    }
-
     a {
       color: #0056d6;
       text-decoration: none;
@@ -127,13 +108,10 @@
 <body>
   <header>
     <div class="avatar">
-      <!-- 👇 Replace 'ravi.jpg' with your uploaded image filename -->
       <img id="profilePhoto" src="ravi.jpg" alt="Peddaboina Ravi" />
     </div>
     <h1>Peddaboina Ravi</h1>
     <p>Python Developer & Data Analyst | Hyderabad</p>
-    <label for="photoInput" class="upload-btn">Upload New Photo</label>
-    <input id="photoInput" type="file" accept="image/*" onchange="loadPhoto(event)" />
   </header>
 
   <main>
@@ -176,10 +154,7 @@
     <section>
       <h2>Projects</h2>
       <ul>
-        <li><strong>Analysis and Prediction of Electric Vehicle Costs Using Machine Learning</strong><br>
-          Tools: Python, Scikit-learn, Pandas, NumPy, Matplotlib, HTML, CSS, JavaScript.<br>
-          Developed a model to predict EV costs using features such as battery capacity, range, charging time, and brand. Compared Random Forest, Linear Regression, and Neural Networks. Built a Flask web app for predictions.
-        </li>
+        <li><strong>Analysis and Prediction of Electric Vehicle Costs Using Machine Learning</strong><br>Tools: Python, Scikit-learn, Pandas, NumPy, Matplotlib, HTML, CSS, JavaScript.<br>Developed a model to predict EV costs using features such as battery capacity, range, charging time, and brand. Compared Random Forest, Linear Regression, and Neural Networks. Built a Flask web app for predictions.</li>
       </ul>
     </section>
 
@@ -194,26 +169,14 @@
 
     <section>
       <h2>Contact</h2>
-      <p>
-        <strong>Email:</strong> <a href="mailto:peddaboinaraviyadav0@gmail.com">peddaboinaraviyadav0@gmail.com</a><br>
-        <strong>Phone:</strong> +91-8688471526<br>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/peddaboina-ravi-737929319" target="_blank">
-          www.linkedin.com/in/peddaboina-ravi-737929319
-        </a>
-      </p>
+      <p><strong>Email:</strong> <a href="mailto:peddaboinaraviyadav0@gmail.com">peddaboinaraviyadav0@gmail.com</a><br>
+         <strong>Phone:</strong> +91-8688471526<br>
+         <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/peddaboina-ravi-737929319" target="_blank">www.linkedin.com/in/peddaboina-ravi-737929319</a></p>
     </section>
   </main>
 
   <footer>
     © 2025 Peddaboina Ravi | Python Developer & Data Analyst Portfolio
   </footer>
-
-  <script>
-    function loadPhoto(event) {
-      const photo = document.getElementById('profilePhoto');
-      photo.src = URL.createObjectURL(event.target.files[0]);
-    }
-  </script>
 </body>
 </html>
